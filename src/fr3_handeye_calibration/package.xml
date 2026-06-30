@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>fr3_handeye_calibration</name>
+  <version>0.1.0</version>
+  <description>
+    Hand-eye (eye-in-hand and eye-to-hand) calibration bringup for a Franka
+    Research 3 arm and an Orbbec Gemini 435Le camera, using MoveIt Calibration
+    on ROS 2 Jazzy.
+  </description>
+  <maintainer email="zolondektowanda@gmail.com">hsc</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Robot bringup + MoveIt -->
+  <exec_depend>franka_fr3_moveit_config</exec_depend>
+  <exec_depend>franka_bringup</exec_depend>
+  <exec_depend>franka_description</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <!-- Calibration plugin (RViz display + solvers) -->
+  <exec_depend>moveit_calibration_gui</exec_depend>
+  <exec_depend>moveit_calibration_plugins</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <!-- Camera -->
+  <exec_depend>orbbec_camera</exec_depend>
+
+  <!-- Launch -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,9 @@
+# colcon build artifacts
+/build/
+/install/
+/log/
+
+# Python / editor cruft
+__pycache__/
+*.pyc
+*.swp

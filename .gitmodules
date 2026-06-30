@@ -1,0 +1,15 @@
+[submodule "src/moveit_calibration"]
+	path = src/moveit_calibration
+	url = git@github.com:hesic73/moveit_calibration.git
+	branch = ros2
+[submodule "src/franka_ros2"]
+	path = src/franka_ros2
+	url = https://github.com/frankarobotics/franka_ros2.git
+	branch = jazzy
+[submodule "src/OrbbecSDK_ROS2"]
+	path = src/OrbbecSDK_ROS2
+	url = https://github.com/orbbec/OrbbecSDK_ROS2.git
+	branch = v2-main
+[submodule "src/franka_description"]
+	path = src/franka_description
+	url = https://github.com/frankarobotics/franka_description.git

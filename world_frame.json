@@ -1,0 +1,82 @@
+{
+  "frames": {
+    "world_origin": "midpoint of left and right base origins",
+    "world_z": "opposite physical gravity, estimated from stationary accelerometer",
+    "world_x": "mean arm X direction projected perpendicular to world Z",
+    "camera_frame": "camera_color_optical_frame",
+    "imu_frame": "camera_accel_optical_frame"
+  },
+  "sampling": {
+    "received": 1501,
+    "accepted": 1500,
+    "mean_acceleration_imu_m_s2": [
+      0.375012707,
+      -9.036380367,
+      -3.727844217
+    ],
+    "mean_acceleration_norm_m_s2": 9.782311954,
+    "norm_filter_median_m_s2": 9.781883849,
+    "norm_filter_tolerance_m_s2": 0.15
+  },
+  "diagnostics": {
+    "arm_x_axis_angle_deg": 1.453001,
+    "world_axes_expressed_in_camera": {
+      "x": [
+        -0.034416503,
+        -0.382178339,
+        0.923447466
+      ],
+      "y": [
+        -0.998782801,
+        -0.019514051,
+        -0.045300312
+      ],
+      "z": [
+        0.035332999,
+        -0.923882525,
+        -0.381041546
+      ]
+    }
+  },
+  "transforms": {
+    "world_to_camera_color_optical_frame": {
+      "translation_xyz_m": [
+        -0.018185917,
+        0.026943294,
+        0.483087227
+      ],
+      "quaternion_xyzw": [
+        -0.584409765,
+        0.59075037,
+        -0.410149061,
+        0.375841689
+      ]
+    },
+    "world_to_left_base": {
+      "translation_xyz_m": [
+        0.013079894,
+        0.100675805,
+        -0.005974552
+      ],
+      "quaternion_xyzw": [
+        -0.384143054,
+        0.008784306,
+        0.009273849,
+        0.923185217
+      ]
+    },
+    "world_to_right_base": {
+      "translation_xyz_m": [
+        -0.013079894,
+        -0.100675805,
+        0.005974552
+      ],
+      "quaternion_xyzw": [
+        0.371558531,
+        0.015676373,
+        -0.011863525,
+        0.928201361
+      ]
+    }
+  }
+}

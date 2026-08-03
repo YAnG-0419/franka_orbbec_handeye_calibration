@@ -1,6 +1,6 @@
 [submodule "src/moveit_calibration"]
 	path = src/moveit_calibration
-	url = git@github.com:hesic73/moveit_calibration.git
+	url = https://github.com/hesic73/moveit_calibration.git
 	branch = ros2
 [submodule "src/franka_ros2"]
 	path = src/franka_ros2
